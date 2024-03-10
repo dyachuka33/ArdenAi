@@ -497,8 +497,8 @@ class InnoScript:
     def compile(self):
         """Execute InnoSetup to compile the script"""
         compilerOptions = [
-            "C:\Program Files\Inno Setup 5\ISCC.exe",
-            "C:\Program Files (x86)\Inno Setup 5\ISCC.exe",
+            "C:\Program Files\Inno Setup 6\ISCC.exe",
+            "C:\Program Files (x86)\Inno Setup 6\ISCC.exe",
         ]
         for compiler in compilerOptions:
             if os.path.exists(compiler):

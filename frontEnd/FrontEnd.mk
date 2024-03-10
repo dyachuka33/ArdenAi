@@ -134,6 +134,7 @@ obfuscateFrontEnd:
 	$(HUSH)mv "$(FRONTEND_PACKAGE_UNIXDIR)" "$(FRONTEND_PACKAGE_UNIXDIR_STAGE2)"/smartvideo
 
 	@echo "Renaming math directory to work around obfuscator bug"
+	@echo "$(FRONTEND_PACKAGE_UNIXDIR_STAGE2)/smartvideo"
 	$(HUSH)find $(FRONTEND_PACKAGE_UNIXDIR_STAGE2)/smartvideo -name '*.py' -exec \
 	  sed -e 's/vitaToolbox\.math/vitaToolbox\.math2/g' -i'_' {} ';'
 	$(HUSH)mv $(FRONTEND_PACKAGE_UNIXDIR_STAGE2)/smartvideo/vitaToolbox/math $(FRONTEND_PACKAGE_UNIXDIR_STAGE2)/smartvideo/vitaToolbox/math2

@@ -134,6 +134,8 @@ echo "Building final SV project"
 echo ">>>>> PATH=$PATH"
 echo ">>>>> PYTHON=`which python`"
 export SHELL=/bin/bash
+
+
 cd $SCRIPT_DIR
 make
 if [ $? -ne 0 ]; then
